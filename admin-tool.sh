@@ -27,17 +27,17 @@ show_main_menu() {
         elif [ "$choice" -eq 3 ]; then
             show_system_info
         elif [ "$choice" -eq 4 ]; then
-            cat /etc/shells
+            echo"$(cat /etc/shells)"
         elif [ "$choice" -eq 5 ]; then
-            xinput --list
+            echo"$(xinput --list)"
         elif [ "$choice" -eq 6 ]; then
-            cat /proc/cpuinfo
+            echo"$(cat /proc/cpuinfo)"
         elif [ "$choice" -eq 7 ]; then
-            free -h
+            echo"$(free -h)"
         elif [ "$choice" -eq 8 ]; then
-            lsblk
+            echo"$(lsblk)"
         elif [ "$choice" -eq 9 ]; then
-            df -h
+            echo"$(df -h)"
         elif [ "$choice" -eq 10 ]; then
             exit 0
         else
